@@ -1,0 +1,76 @@
+.interna-produtos {
+  background: url("/img/bg-produtos.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.produto-item {
+  padding-top: 60px;
+}
+
+.produto-item h2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: -56px;
+  position: relative;
+  top: -180px;
+}
+
+.produto-item h2:after, .produto-item h2:before {
+  content: "";
+  background: #fff;
+  display: block;
+  margin: 6px auto 8px auto;
+  width: 60px;
+  height: 3px;
+}
+
+.produto-icone {
+  background: #000;
+  height: 280px;
+  padding: 75px 0;
+}
+
+.produto-icone img {
+  margin: 0 auto;
+}
+
+.produto-info {
+  background: #000;
+}
+
+.produto-info p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+  height: 180px;
+  padding: 30px 20px;
+}
+
+.produto-info ul li {
+  background: #fec63d;
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 16px;
+  width: 229px;
+  height: 49px;
+}
+
+.produto-info ul li:nth-child(1), .produto-info ul li:nth-child(2) {
+  margin-bottom: 2px;
+}
+
+.produto-info ul li:nth-child(even) {
+  margin-left: 1px;
+}
+
+.produto-info ul li:nth-child(odd) {
+  margin-right: 1px;
+}
