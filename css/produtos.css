@@ -1,6 +1,5 @@
 .interna-produtos {
-  background: url("/img/bg-produtos.jpg") no-repeat center;
-  background-size: cover;
+  background-image: url("/img/bg-produtos.jpg");
 }
 
 .produto-item {

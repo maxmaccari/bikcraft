@@ -1,6 +1,5 @@
 .interna-contato {
-  background: url("/img/bg-contato.jpg") no-repeat center;
-  background-size: cover;
+  background-image: url("/img/bg-contato.jpg");
 }
 
 .contato {

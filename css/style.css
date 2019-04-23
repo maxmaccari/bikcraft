@@ -149,6 +149,9 @@ img {
   padding: 30px 0;
   color: #fff;
   text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .introducao-interna h1 {

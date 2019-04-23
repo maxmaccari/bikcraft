@@ -1,6 +1,5 @@
 .interna-portfolio {
-  background: url("/img/bg-portfolio.jpg") no-repeat center;
-  background-size: cover;
+  background-image: url("/img/bg-portfolio.jpg");
 }
 
 .quote-clientes {
