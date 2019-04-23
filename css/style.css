@@ -355,12 +355,6 @@ img {
   height: 50px;
 }
 
-.footer-redes ul li a img {
-  position: relative;
-  top: -3px;
-  left: -3px;
-}
-
 .footer-redes ul li a:hover {
   border-color: #fff;
 }
