@@ -13,6 +13,28 @@
     width: 40px;
     height: 40px;
   }
+
+  /* Produtos */
+  .produto-item h2 {
+    top: -150px;
+  }
+
+  .produto-icone {
+    height: 222px;
+    padding: 41px 0;
+  }
+
+  .produto-info p {
+    font-size: 14px;
+    line-height: 20px;
+    height: 122px;
+    padding: 20px 30px;
+  }
+
+  .produto-info ul li {
+    width: 181px;
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -88,5 +110,39 @@
   .missao-sobre ul li {
     font-size: 14px;
     line-height: 25px;
+  }
+
+  /* Produtos */
+  .produto-item h2 {
+    top: -105px;
+    margin-bottom: -68px
+  }
+
+   .produto-icone {
+    padding: 41px 0;
+    height: 222px;
+  }
+
+
+  .produto-info p {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 20px 30px;
+    height: auto;
+  }
+
+  .produto-info ul li {
+    width: 149px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* Orçamento */
+  .form {
+    padding-right: 0;
+  }
+
+  .orcamento-dados ul {
+    padding: 0px;
   }
 }
