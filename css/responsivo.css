@@ -49,7 +49,7 @@
     border-color: #fff;
   }
 
-  /* Introducao */
+  /* Introdução */
 
   .introducao {
     background-image: url('/img/bg-mobile.jpg');
@@ -61,6 +61,12 @@
     font-size: 36px;
   }
 
+  /* Introdução Interna */
+
+  .introducao-interna {
+    margin-top: 0;
+  }
+
   /* Call */
   .call {
     padding-top: 10px;
@@ -69,5 +75,18 @@
   /* Qualidade */
   .qualidade:after {
     display: none;
+  }
+
+  /* Sobre */
+
+  .missao-sobre p {
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .missao-sobre ul li {
+    font-size: 14px;
+    line-height: 25px;
   }
 }
