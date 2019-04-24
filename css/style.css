@@ -236,7 +236,7 @@ img {
   background: #fec63d;
 }
 
-.portfolio-lista li:last-child {
+.portfolio-lista div:last-of-type {
   margin-top: 20px;
 }
 
