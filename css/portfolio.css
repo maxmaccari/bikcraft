@@ -75,6 +75,7 @@
   border-radius: 12px;
   overflow: hidden;
   text-indent: -200px;
+  transition: all .5s ease;
 }
 
 .rslides_tabs li a:hover, .rslides_tabs li.rslides_here a {

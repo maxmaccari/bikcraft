@@ -44,6 +44,7 @@ img {
   line-height: 20px;
   padding: 10px 30px;
   text-transform: uppercase;
+  transition: all .5s ease;
 }
 
 .btn:hover {
@@ -84,6 +85,7 @@ img {
   letter-spacing: .1em;
   text-transform: uppercase;
   padding: 10px 0;
+  transition: all .5s ease;
 }
 
 .header_menu ul li a:hover {
@@ -356,6 +358,11 @@ img {
   display: block;
   width: 50px;
   height: 50px;
+  transition: all .5s ease;
+}
+
+.footer-redes ul li a img{
+  transition: all .5s ease;
 }
 
 .footer-redes ul li a:hover {
@@ -363,11 +370,58 @@ img {
 }
 
 .footer-redes ul li a:hover img {
-  filter: grayscale(100%) brightness(10);
+  filter: grayscale(100%) brightness(1.25);
 }
 
 .copy {
   width: 100%;
   background: #fec63d;
   padding: 20px 0;
+}
+
+/* Animações */
+.js .introducao h1, .js .introducao blockquote, .js .introducao .btn,
+.js .animar, .js .animar-interno, .js .introducao-interna h1,
+.js .introducao-interna p {
+  opacity: 0;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px 0);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
 }

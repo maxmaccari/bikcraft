@@ -115,6 +115,7 @@
   outline: none;
   padding: 7px;
   width: 100%;
+  transition: all .5s ease;
 }
 
 .form input:focus, .form textarea:focus {
