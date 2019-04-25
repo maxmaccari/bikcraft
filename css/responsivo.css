@@ -74,7 +74,7 @@
   /* Introdução */
 
   .introducao {
-    background-image: url('/img/bg-mobile.jpg');
+    background-image: url('img/bg-mobile.jpg');
     margin-top: 0;
     padding-top: 40px;
   }
