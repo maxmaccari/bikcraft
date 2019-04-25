@@ -12,7 +12,7 @@ I'm gonna improve this project by my free time.
 
 ## Changes that I'm gonna make during the time
 - [x] Use git on this project
-- [ ] Remove PHP from the project
+- [x] Remove PHP from the project
 - [ ] Configure a npm workflow to build the project
 - [ ] Use BEM and another CSS Architecture methodologies to organize CSS code
 - [ ] Use header and footer as a mixin to avoid code duplication
