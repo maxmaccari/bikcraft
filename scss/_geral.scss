@@ -16,7 +16,7 @@ img {
 }
 
 .subtitulo {
-  color: #000;
+  color: $black;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: .1em;
@@ -27,7 +27,7 @@ img {
 }
 
 .subtitulo:after {
-  background: #000;
+  background: $black;
   content: "";
   display: block;
   margin: 8px auto;
@@ -36,8 +36,8 @@ img {
 }
 
 .btn {
-  border: solid 3px #fec63d;
-  color: #fec63d;
+  border: solid 3px $cor-primaria;
+  color: $cor-primaria;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: .1em;
@@ -48,19 +48,19 @@ img {
 }
 
 .btn:hover {
-  border-color: #fff;
-  color: #fff;
+  border-color: $white;
+  color: $white;
 }
 
 .btn.btn-preto:hover {
-  border-color: #000;
-  color: #000;
+  border-color: $black;
+  color: $black;
 }
 
 /* Header */
 
 .header {
-  background: #fec63d;
+  background: $cor-primaria;
   padding: 15px 0;
   position: fixed;
   top: 0;
@@ -79,7 +79,7 @@ img {
 }
 
 .header_menu ul li a {
-  color: #000;
+  color: $black;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: .1em;
@@ -89,11 +89,11 @@ img {
 }
 
 .header_menu ul li a:hover {
-  color: #fff;
+  color: $white;
 }
 
 .header_menu .menu-ativo a {
-  color: #fff;
+  color: $white;
 }
 
 /* Introdução */
@@ -109,14 +109,14 @@ img {
 }
 
 .introducao h1 {
-  color: #fff;
+  color: $white;
   font-size: 48px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .quote-externo {
-  color: #fff;
+  color: $white;
   max-width: 400px;
   margin: 0 auto 40px auto;
 }
@@ -130,7 +130,7 @@ img {
   display: block;
   width: 60px;
   height: 3px;
-  background: #fff;
+  background: $white;
   margin: 14px auto 10px auto;
 }
 
@@ -149,7 +149,7 @@ img {
   height: 160px;
   margin-top: 92px;
   padding: 30px 0;
-  color: #fff;
+  color: $white;
   text-align: center;
   background-position: center;
   background-repeat: no-repeat;
@@ -163,7 +163,7 @@ img {
 }
 
 .introducao-interna h1:after {
-  background: #fff;
+  background: $white;
   content: "";
   display: block;
   margin: 6px auto 10px auto;
@@ -178,7 +178,7 @@ img {
 }
 
 .produtos-lista li {
-  background: #fec63d;
+  background: $cor-primaria;
   text-align: center;
 }
 
@@ -192,7 +192,7 @@ img {
 }
 
 .produtos-lista li h3:after {
-  background: #000;
+  background: $black;
   content: "";
   display: block;
   width: 60px;
@@ -204,7 +204,7 @@ img {
 }
 
 .produtos-icone {
-  background: #000;
+  background: $black;
   padding: 20px;
 }
 
@@ -225,17 +225,17 @@ img {
 /* Portfólio */
 
 .portfolio {
-  background: #000;
+  background: $black;
   padding: 40px 0;
   width: 100%;
 }
 
 .portfolio .subtitulo {
-  color: #fec63d;
+  color: $cor-primaria;
 }
 
 .portfolio .subtitulo:after {
-  background: #fec63d;
+  background: $cor-primaria;
 }
 
 .portfolio-lista div:last-of-type {
@@ -243,7 +243,7 @@ img {
 }
 
 .portfolio .call p {
-  color: #fff;
+  color: $white;
 }
 
 /* Qualidade */
@@ -288,7 +288,7 @@ img {
 }
 
 .qualidade-lista li h3:after {
-  background: #000;
+  background: $black;
   content: "";
   display: block;
   width: 60px;
@@ -315,15 +315,15 @@ img {
 
 .footer {
   width: 100%;
-  background: #000;
-  color: #fff;
+  background: $black;
+  color: $white;
   padding: 20px 0;
 }
 
 .footer h3 {
   font-size: 18px;
   line-height: 25px;
-  color: #fec63d;
+  color: $cor-primaria;
   text-transform: uppercase;
   letter-spacing: .1em;
   font-weight: bold;
@@ -334,7 +334,7 @@ img {
   display: block;
   width: 60px;
   height: 3px;
-  background: #fec63d;
+  background: $cor-primaria;
   margin: 6px 0 12px 0;
 }
 
@@ -354,7 +354,7 @@ img {
 }
 
 .footer-redes ul li a {
-  border: 3px solid #fec63d;
+  border: 3px solid $cor-primaria;
   display: block;
   width: 50px;
   height: 50px;
@@ -366,7 +366,7 @@ img {
 }
 
 .footer-redes ul li a:hover {
-  border-color: #fff;
+  border-color: $white;
 }
 
 .footer-redes ul li a:hover img {
@@ -375,7 +375,7 @@ img {
 
 .copy {
   width: 100%;
-  background: #fec63d;
+  background: $cor-primaria;
   padding: 20px 0;
 }
 
@@ -439,9 +439,9 @@ img {
 }
 
 #form-send {
-	color: #31aa39;
+	color: $success;
 }
 
 #form-erro {
-	color: #f64540;
+	color: $error;
 }

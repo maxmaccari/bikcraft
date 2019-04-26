@@ -7,7 +7,7 @@
 }
 
 .produto-item h2 {
-  color: #fff;
+  color: $white;
   font-size: 36px;
   font-weight: bold;
   letter-spacing: .1em;
@@ -20,7 +20,7 @@
 
 .produto-item h2:after, .produto-item h2:before {
   content: "";
-  background: #fff;
+  background: $white;
   display: block;
   margin: 6px auto 8px auto;
   width: 60px;
@@ -28,7 +28,7 @@
 }
 
 .produto-icone {
-  background: #000;
+  background: $black;
   height: 280px;
   padding: 75px 0;
 }
@@ -38,11 +38,11 @@
 }
 
 .produto-info {
-  background: #000;
+  background: $black;
 }
 
 .produto-info p {
-  color: #fff;
+  color: $white;
   font-size: 18px;
   line-height: 25px;
   height: 180px;
@@ -50,7 +50,7 @@
 }
 
 .produto-info ul li {
-  background: #fec63d;
+  background: $cor-primaria;
   float: left;
   font-size: 18px;
   font-weight: bold;
@@ -77,18 +77,18 @@
 /* Orçamento */
 
 .orcamento {
-  background: #000;
+  background: $black;
   margin-top: 60px;
   padding: 40px 0;
   width: 100%;
 }
 
 .orcamento h2 {
-  color: #fec63d;
+  color: $cor-primaria;
 }
 
 .orcamento h2:after {
-  background: #fec63d;
+  background: $cor-primaria;
 }
 
 .form {
@@ -96,7 +96,7 @@
 }
 
 .form label {
-  color: #fff;
+  color: $white;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 18px;
   line-height: 25px;
@@ -105,11 +105,11 @@
 }
 
 .form input, .form textarea {
-  color: #fff;
+  color: $white;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 14px;
   background: none;
-  border: 4px solid #fec63d;
+  border: 4px solid $cor-primaria;
   display: block;
   margin-bottom: 10px;
   outline: none;
@@ -119,7 +119,7 @@
 }
 
 .form input:focus, .form textarea:focus {
-  border-color: #fff;
+  border-color: $white;
 }
 
 .form textarea {
@@ -133,11 +133,11 @@
 }
 
 .orcamento-dados {
-  color: #fff;
+  color: $white;
 }
 
 .orcamento-dados h3 {
-  color: #fec63d;
+  color: $cor-primaria;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
@@ -164,7 +164,7 @@
 }
 
 .orcamento-dados ul li:nth-child(odd) {
-  background: #1d1d1d;
+  background: $gray;
 }
 
 

@@ -70,8 +70,8 @@
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: #1d1d1d;
-  color: #fec63d;
+  background: $gray;
+  color: $cor-primaria;
   border-radius: 12px;
   overflow: hidden;
   text-indent: -200px;
@@ -79,6 +79,6 @@
 }
 
 .rslides_tabs li a:hover, .rslides_tabs li.rslides_here a {
-  background: #fec63d;
-  box-shadow: #fec63d 0 0 10px;
+  background: $cor-primaria;
+  box-shadow: $cor-primaria 0 0 10px;
 }
