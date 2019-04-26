@@ -16,6 +16,13 @@
   position: relative;
   top: -180px;
   @include tipo-1(36);
+  @include d(t) {
+    top: -150px;
+  }
+  @include d(m) {
+    top: -105px;
+    margin-bottom: -68px
+  }
 }
 
 .produto-item h2:after, .produto-item h2:before {
@@ -31,6 +38,14 @@
   background: $black;
   height: 280px;
   padding: 75px 0;
+  @include d(t) {
+    height: 222px;
+    padding: 41px 0;
+  }
+  @include d(m) {
+    padding: 41px 0;
+    height: 222px;
+  }
 }
 
 .produto-icone img {
@@ -45,7 +60,17 @@
   color: $white;
   height: 180px;
   padding: 30px 20px;
-  @include tipo-1(18);
+  @include tipo-2(18);
+  @include d(t) {
+    height: 122px;
+    padding: 20px 30px;
+    @include tipo-2(14);
+  }
+  @include d(m) {
+    padding: 20px 30px;
+    height: auto;
+    @include tipo-2(14);
+  }
 }
 
 .produto-info ul li {
@@ -59,6 +84,14 @@
   height: 49px;
   @include tipo-1(18);
   line-height: 20px;
+  @include d(t) {
+    width: 181px;
+    @include tipo-1(14);
+  }
+  @include d(m) {
+    width: 149px;
+    @include tipo-1(14);
+  }
 }
 
 .produto-info ul li:nth-child(1), .produto-info ul li:nth-child(2) {
@@ -80,6 +113,9 @@
   margin-top: 60px;
   padding: 40px 0;
   width: 100%;
+  @include d(m) {
+    padding-right: 0;
+  }
 }
 
 .orcamento h2 {
@@ -136,6 +172,7 @@
   color: $cor-primaria;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 20px;
   padding-bottom: 10px;
   @include tipo-1(18);
 }
@@ -148,6 +185,9 @@
 .orcamento-dados ul {
   margin-top: 10px;
   padding-right: 60px;
+  @include d(m) {
+    padding: 0px;
+  }
 }
 
 .orcamento-dados ul li {
