@@ -25,15 +25,14 @@
   }
 
   .produto-info p {
-    font-size: 14px;
-    line-height: 20px;
     height: 122px;
     padding: 20px 30px;
+    @include tipo-2(14);
   }
 
   .produto-info ul li {
     width: 181px;
-    font-size: 14px;
+    @include tipo-2(14);
   }
 }
 
@@ -80,7 +79,7 @@
   }
 
   .introducao h1 {
-    font-size: 36px;
+    @include tipo-1(36);
   }
 
   /* Introdução Interna */
@@ -103,13 +102,11 @@
 
   .missao-sobre p {
     padding-right: 0;
-    font-size: 14px;
-    line-height: 20px;
+    @include tipo-2(14);
   }
 
   .missao-sobre ul li {
-    font-size: 14px;
-    line-height: 25px;
+    @include tipo-2(14);
   }
 
   /* Produtos */
@@ -125,16 +122,14 @@
 
 
   .produto-info p {
-    font-size: 14px;
-    line-height: 20px;
     padding: 20px 30px;
     height: auto;
+    @include tipo-2(14);
   }
 
   .produto-info ul li {
     width: 149px;
-    font-size: 14px;
-    line-height: 20px;
+    @include tipo-2(14);
   }
 
   /* Orçamento */

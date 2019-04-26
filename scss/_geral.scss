@@ -5,9 +5,7 @@ body {
 }
 
 p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 14px;
-  line-height: 20px;
+  @include tipo-2(14);
 }
 
 img {
@@ -17,13 +15,12 @@ img {
 
 .subtitulo {
   color: $black;
-  font-size: 24px;
   font-weight: bold;
   letter-spacing: .1em;
-  line-height: 30px;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 40px;
+  @include tipo-1(24);
 }
 
 .subtitulo:after {
@@ -38,13 +35,12 @@ img {
 .btn {
   border: solid 3px $cor-primaria;
   color: $cor-primaria;
-  font-size: 14px;
   font-weight: bold;
   letter-spacing: .1em;
-  line-height: 20px;
   padding: 10px 30px;
   text-transform: uppercase;
   transition: all .5s ease;
+  @include tipo-1(14);
 }
 
 .btn:hover {
@@ -80,12 +76,12 @@ img {
 
 .header_menu ul li a {
   color: $black;
-  font-size: 14px;
   font-weight: bold;
   letter-spacing: .1em;
   text-transform: uppercase;
   padding: 10px 0;
   transition: all .5s ease;
+  @include tipo-1(14);
 }
 
 .header_menu ul li a:hover {
@@ -110,9 +106,9 @@ img {
 
 .introducao h1 {
   color: $white;
-  font-size: 48px;
   font-weight: bold;
   text-transform: uppercase;
+  @include tipo-1(48);
 }
 
 .quote-externo {
@@ -137,9 +133,9 @@ img {
 .quote-externo cite {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
   letter-spacing: .1em;
   text-transform: uppercase;
+  @include tipo-1(14);
 }
 
 /* Introdução Interna */
@@ -157,9 +153,9 @@ img {
 }
 
 .introducao-interna h1 {
-  font-size: 36px;
   font-weight: bold;
   text-transform: uppercase;
+  @include tipo-1(36);
 }
 
 .introducao-interna h1:after {
@@ -184,11 +180,10 @@ img {
 
 .produtos-lista li h3 {
   font-weight: bold;
-  font-size: 18px;
   letter-spacing: .1em;
-  line-height: 25px;
   text-transform: uppercase;
   margin-top: 20px;
+  @include tipo-1(18);
 }
 
 .produtos-lista li h3:after {
@@ -280,11 +275,10 @@ img {
 
 .qualidade-lista li h3 {
   font-weight: bold;
-  font-size: 18px;
   letter-spacing: .1em;
-  line-height: 25px;
   text-transform: uppercase;
   margin-top: 20px;
+  @include tipo-1(18);
 }
 
 .qualidade-lista li h3:after {
@@ -321,12 +315,11 @@ img {
 }
 
 .footer h3 {
-  font-size: 18px;
-  line-height: 25px;
   color: $cor-primaria;
   text-transform: uppercase;
   letter-spacing: .1em;
   font-weight: bold;
+  @include tipo-1(18);
 }
 
 .footer h3:after {
@@ -343,9 +336,7 @@ img {
 }
 
 .footer-contato ul li {
-  font-size: 14px;
-  line-height: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  @include tipo-2(14);
 }
 
 .footer-redes ul li {
@@ -432,10 +423,9 @@ img {
 }
 
 #form-erro span, #form-send span  {
-	font-size: 18px;
-	line-height: 25px;
 	margin-bottom: 10px;
-	display: block;
+  display: block;
+  @include tipo-1(18);
 }
 
 #form-send {

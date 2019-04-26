@@ -10,18 +10,16 @@
 
 .quote-clientes p {
   text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 18px;
-  line-height: 25px;
   font-style: italic;
   margin-bottom: 20px;
+  @include tipo-2(18);
 }
 
 .quote-clientes cite {
   float: right;
-  font-size: 18px;
   font-weight: bold;
   font-style: normal;
+  @include tipo-1(18);
 }
 
 /* Plugin de Slide */
