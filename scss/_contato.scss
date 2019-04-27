@@ -12,86 +12,88 @@
     margin-bottom: 40px;
     padding-right: 0;
   }
+
+  label {
+    display: block;
+    margin-bottom: 4px;
+    @include tipo-2(18);
+  }
+
+  input, textarea {
+    background: none;
+    border: 4px solid $cor-primaria;
+    display: block;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 7px;
+    width: 100%;
+    transition: all .5s ease;
+    @include tipo-2(14);
+
+    &:focus {
+      border-color: $black;
+    }
+  }
+
+  textarea {
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background: none;
+    padding: 7px 40px;
+  }
 }
 
-.contato_form label {
-  display: block;
-  margin-bottom: 4px;
-  @include tipo-2(18);
-}
 
-.contato_form input, .contato_form textarea {
-  background: none;
-  border: 4px solid $cor-primaria;
-  display: block;
-  margin-bottom: 10px;
-  outline: none;
-  padding: 7px;
-  width: 100%;
-  transition: all .5s ease;
-  @include tipo-2(14);
-}
 
-.contato_form input:focus, .contato_form textarea:focus {
-  border-color: $black;
-}
+.contato-dados {
+  h3 {
+    color: $cor-primaria;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    @include tipo-1(18);
+  }
 
-.contato_form textarea {
-  height: 120px;
-  margin-bottom: 20px;
-}
+  span {
+    display: block;
+    @include tipo-2(18);
+    line-height: 30px;
 
-.contato_form button {
-  background: none;
-  padding: 7px 40px;
-}
+    &:nth-of-type(3) {
+      margin-top: 30px;
+    }
+  }
 
-.contato-dados h3 {
-  color: $cor-primaria;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-top: 20px;
-  padding-bottom: 10px;
-  @include tipo-1(18);
-}
+  ul li {
+    display: inline-block;
+    margin-right: 10px;
+    @include tipo-2(14);
+  }
 
-.contato-dados span {
-  display: block;
-  @include tipo-2(18);
-  line-height: 30px;
-}
 
-.contato-dados span:nth-of-type(3) {
-  margin-top: 30px;
-}
+  ul li a {
+    border: 3px solid $cor-primaria;
+    display: block;
+    width: 50px;
+    height: 50px;
+    transition: all .5s ease;
 
-.contato-dados ul li {
-  @include tipo-2(14);
-}
+    &:hover {
+      border-color: $black;
+    }
 
-.contato-dados ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
+    &:hover img {
+      filter: grayscale(100%) brightness(0);
+    }
+  }
 
-.contato-dados ul li a {
-  border: 3px solid $cor-primaria;
-  display: block;
-  width: 50px;
-  height: 50px;
-  transition: all .5s ease;
-}
-
-.contato-dados ul li a img {
-  transition: all .5s ease;
-}
-
-.contato-dados ul li a:hover {
-  border-color: $black;
-}
-
-.contato-dados ul li a:hover img {
-  filter: grayscale(100%) brightness(0);
+  ul li a img {
+    transition: all .5s ease;
+  }
 }
 
 .contato-mapa {

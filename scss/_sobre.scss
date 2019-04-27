@@ -4,28 +4,28 @@
 
 .missao-sobre {
   padding-top: 60px;
-}
-.missao-sobre p {
-  padding-bottom: 1em;
-  padding-right: 40px;
-  @include tipo-2(18);
-  @include d(m) {
-    padding-right: 0;
-    @include tipo-2(14);
+
+  p {
+    padding-bottom: 1em;
+    padding-right: 40px;
+    @include tipo-2(18);
+    @include d(m) {
+      padding-right: 0;
+      @include tipo-2(14);
+    }
+  }
+
+  ul li {
+    @include tipo-2(18);
+    @include d(m) {
+      @include tipo-2(14);
+    }
+
+    &:before {
+      content: "- "
+    }
   }
 }
-
-.missao-sobre ul li {
-  @include tipo-2(18);
-  @include d(m) {
-    @include tipo-2(14);
-  }
-}
-
-.missao-sobre ul li:before {
-  content: "- "
-}
-
 .foto-equipe {
   padding-top: 20px;
 }
@@ -37,13 +37,13 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   @include tipo-1(24);
-}
 
-.subtitulo-interno:after {
-  background: $black;
-  content: "";
-  display: block;
-  margin: 8px 0;
-  width: 60px;
-  height: 3px;
+  &:after {
+    background: $black;
+    content: "";
+    display: block;
+    margin: 8px 0;
+    width: 60px;
+    height: 3px;
+  }
 }
