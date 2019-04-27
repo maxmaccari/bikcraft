@@ -7,12 +7,13 @@ I'm gonna improve this project by my free time.
 
 ## Courses
 - [x] Web Design Completo
-- [ ] CSS com SASS
+- [X] CSS com SASS
 - [ ] Automação Front End com NPM
 
 ## Changes that I'm gonna make during the time
 - [x] Use git on this project
 - [x] Remove PHP from the project
+- [x] Use SASS to concatenate, minify and improve style code
 - [ ] Configure a npm workflow to build the project
 - [ ] Use BEM and another CSS Architecture methodologies to organize CSS code
 - [ ] Use header and footer as a mixin to avoid code duplication
