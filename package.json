@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "gulp",
-    "build:styles": "gulp styles",
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,9 +24,12 @@
   },
   "homepage": "https://github.com/maxmaccari/bikcraft#readme",
   "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
     "browser-sync": "^2.26.5",
     "gulp": "^4.0.1",
     "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
     "sass": "^1.19.0"
