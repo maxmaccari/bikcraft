@@ -4,6 +4,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
+var uglify = require('gulp-uglify');
 
 // Functions
 const buildStyles = () => {
@@ -23,6 +24,7 @@ const buildJavascript = () => {
     .pipe(babel({
       presets: ['@babel/env']
     }))
+    .pipe(uglify())
     .pipe(gulp.dest('js/'))
     .pipe(browserSync.stream());
 }
