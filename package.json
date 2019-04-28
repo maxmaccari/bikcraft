@@ -4,6 +4,9 @@
   "description": "This is a project created on Web Design Completo by Origamid.",
   "main": "index.html",
   "scripts": {
+    "start": "npm run dev",
+    "dev": "gulp",
+    "build:styles": "gulp styles",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

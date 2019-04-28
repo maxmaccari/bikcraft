@@ -5,6 +5,17 @@ course by [Origamid](https://www.origamid.com).
 
 I'm gonna improve this project by my free time.
 
+## Running dev server
+```bash
+npm start
+```
+
+or
+
+```bash
+npm dev server
+```
+
 ## Courses
 - [x] Web Design Completo
 - [X] CSS com SASS
