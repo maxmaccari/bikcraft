@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
+const browserSync = require('browser-sync').create();
 
 // Functions
 const buildStyles = () => {
@@ -11,7 +12,16 @@ const buildStyles = () => {
       cascade: false
     }))
     .pipe(gulp.dest('css/'));
-}
+};
+
+const server = () => {
+  browserSync.init({
+    server: {
+      baseDir: './'
+    }
+  })
+};
 
 // Tasks
-gulp.task('styles', buildStyles)
+gulp.task('styles', buildStyles);
+gulp.task('server', server);
