@@ -27,8 +27,8 @@ npm dev server
 - [x] Use SASS to concatenate, minify and improve style code
 - [x] Configure a npm workflow to build the project
 - [x] Separate source code from build files
-- [X] Optimize images on build
-- [ ] Use a template engine to avoid code duplication on public pages
+- [x] Optimize images on build
+- [x] Use a template engine to avoid code duplication on public pages
 - [ ] Install linter for CSS and Javascript
 - [ ] Use BEM and another CSS Architecture methodologies to organize CSS code
 - [ ] Style the code in the way I like to code
