@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/maxmaccari/bikcraft/issues"
   },
-  "homepage": "https://github.com/maxmaccari/bikcraft#readme"
+  "homepage": "https://github.com/maxmaccari/bikcraft#readme",
+  "devDependencies": {
+    "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sass": "^4.0.2",
+    "sass": "^1.19.0"
+  }
 }
