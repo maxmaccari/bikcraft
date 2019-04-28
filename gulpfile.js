@@ -4,6 +4,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+const imagemin = require('gulp-imagemin');
 
 // Functions
 const buildStyles = () => {
@@ -28,13 +29,22 @@ const buildJavascript = () => {
     .pipe(uglify())
     .pipe(gulp.dest('public/js/'))
     .pipe(browserSync.stream());
+};
+
+const minifyImages = () => {
+  return gulp.src('src/img/**/*')
+    .pipe(imagemin([
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 5})
+    ]))
+    .pipe(gulp.dest('public/img'))
 }
 
 const copyStatic = () => {
   return gulp.src('src/static/**/*')
     .pipe(gulp.dest('public/'))
     .pipe(browserSync.stream());
-}
+};
 
 const server = () => {
   browserSync.init({
@@ -53,8 +63,9 @@ const watch = () => {
 // Tasks
 gulp.task('styles', buildStyles);
 gulp.task('javascript', buildJavascript);
+gulp.task('images', minifyImages);
 gulp.task('static', copyStatic);
-gulp.task('build', gulp.parallel('static', 'styles', 'javascript'))
+gulp.task('build', gulp.parallel('static', 'images', 'styles', 'javascript'))
 gulp.task('server', server);
 gulp.task('watch', watch);
 gulp.task('default', gulp.parallel('build','watch', 'server'));
