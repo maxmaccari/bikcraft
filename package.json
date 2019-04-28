@@ -28,8 +28,10 @@
     "gulp": "^4.0.1",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
+    "jimp": "^0.6.4",
     "sass": "^1.19.0"
   },
   "dependencies": {
