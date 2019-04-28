@@ -1,0 +1,23 @@
+{
+  "name": "bikcraft",
+  "version": "1.0.0",
+  "description": "This is a project created on Web Design Completo by Origamid.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxmaccari/bikcraft.git"
+  },
+  "keywords": [
+    "example",
+    "website"
+  ],
+  "author": "Maxsuel Maccari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxmaccari/bikcraft/issues"
+  },
+  "homepage": "https://github.com/maxmaccari/bikcraft#readme"
+}
