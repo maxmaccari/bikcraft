@@ -7,47 +7,54 @@ var uglify = require('gulp-uglify');
 
 // Functions
 const buildStyles = () => {
-  return gulp.src('scss/**/*.scss')
+  return gulp.src('src/scss/**/*.scss')
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(gulp.dest('css/'))
+    .pipe(gulp.dest('public/css/'))
     .pipe(browserSync.stream());
 };
 
 const buildJavascript = () => {
   const files = [
     'node_modules/jquery/dist/jquery.js',
-    'js/plugins.js',
-    'js/main.js'
+    'src/js/plugins.js',
+    'src/js/main.js'
   ]
   return gulp.src(files)
     .pipe(concat('scripts.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('js/'))
+    .pipe(gulp.dest('public/js/'))
+    .pipe(browserSync.stream());
+}
+
+const copyStatic = () => {
+  return gulp.src('src/static/**/*')
+    .pipe(gulp.dest('public/'))
     .pipe(browserSync.stream());
 }
 
 const server = () => {
   browserSync.init({
     server: {
-      baseDir: './'
+      baseDir: './public'
     }
   });
 };
 
 const watch = () => {
-  gulp.watch('scss/*.scss', buildStyles);
-  gulp.watch(['js/**/*.js', '!js/scripts.js'], buildJavascript);
-  gulp.watch('./**/*.html').on('change', browserSync.reload);
+  gulp.watch('src/scss/*.scss', buildStyles);
+  gulp.watch('src/js/**/*.js', buildJavascript);
+  gulp.watch('src/static/**/*', copyStatic);
 };
 
 // Tasks
 gulp.task('styles', buildStyles);
 gulp.task('javascript', buildJavascript);
-gulp.task('build', gulp.parallel('styles', 'javascript'))
+gulp.task('static', copyStatic);
+gulp.task('build', gulp.parallel('static', 'styles', 'javascript'))
 gulp.task('server', server);
 gulp.task('watch', watch);
 gulp.task('default', gulp.parallel('build','watch', 'server'));

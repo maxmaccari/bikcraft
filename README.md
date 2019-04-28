@@ -25,9 +25,11 @@ npm dev server
 - [x] Use git on this project
 - [x] Remove PHP from the project
 - [x] Use SASS to concatenate, minify and improve style code
-- [ ] Configure a npm workflow to build the project
-- [ ] Use BEM and another CSS Architecture methodologies to organize CSS code
-- [ ] Use header and footer as a mixin to avoid code duplication
+- [x] Configure a npm workflow to build the project
+- [x] Separate source code from build files
+- [ ] Optimize images on build
+- [ ] Use a template engine to avoid code duplication on public pages
 - [ ] Install linter for CSS and Javascript
+- [ ] Use BEM and another CSS Architecture methodologies to organize CSS code
 - [ ] Style the code in the way I like to code
 - [ ] Create an API to receive contact form
