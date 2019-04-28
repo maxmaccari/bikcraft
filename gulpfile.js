@@ -3,7 +3,6 @@ const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
-const babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 
 // Functions
@@ -19,11 +18,13 @@ const buildStyles = () => {
 };
 
 const buildJavascript = () => {
-  return gulp.src(['js/plugins.js', 'js/main.js'])
+  const files = [
+    'node_modules/jquery/dist/jquery.js',
+    'js/plugins.js',
+    'js/main.js'
+  ]
+  return gulp.src(files)
     .pipe(concat('scripts.js'))
-    .pipe(babel({
-      presets: ['@babel/env']
-    }))
     .pipe(uglify())
     .pipe(gulp.dest('js/'))
     .pipe(browserSync.stream());
