@@ -1,13 +1,17 @@
-@import "variaveis-e-mixins";
+
+//-------------
+// Legacy Files
+//-------------
+@import "legacy/variaveis-e-mixins";
 
 // Gerais
-@import "normalize";
-@import "reset";
-@import "grid";
-@import "geral";
+@import "legacy/normalize";
+@import "legacy/reset";
+@import "legacy/grid";
+@import "legacy/geral";
 
 // Páginas
-@import "sobre";
-@import "produtos";
-@import "portfolio";
-@import "contato";
+@import "legacy/sobre";
+@import "legacy/produtos";
+@import "legacy/portfolio";
+@import "legacy/contato";
