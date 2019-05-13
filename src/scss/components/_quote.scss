@@ -1,0 +1,29 @@
+.quote {
+  color: $white;
+  max-width: 400px;
+  margin: 0 auto 40px auto;
+}
+
+.quote__content {
+  @include type-2(14);
+  font-style: italic;
+  max-width: 400px;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: $white;
+    margin: 14px auto 10px auto;
+  }
+}
+
+.quote__author {
+  @include type-1(14);
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
