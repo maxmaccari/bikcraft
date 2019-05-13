@@ -42,30 +42,6 @@ p {
   }
 }
 
-/* Portfólio */
-
-.portfolio {
-  background: $black;
-  padding: 40px 0;
-  width: 100%;
-
-  .subtitulo {
-    color: $cor-primaria;
-
-    &:after {
-      background: $cor-primaria;
-    }
-  }
-
-  div:last-of-type {
-    margin-top: 20px;
-  }
-
-  .call p {
-    color: $white;
-  }
-}
-
 /* Qualidade */
 
 .qualidade {
