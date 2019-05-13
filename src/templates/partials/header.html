@@ -1,22 +1,34 @@
 <header class="header">
-  <div class="container">
-    <a href="index.html" class="grid-4">
-      <img src="img/bikcraft.png" alt="Bikcraft">
+  <div class="l-container">
+    <a href="index.html" class="header__logo-link l-grid-4">
+      <img class="header__logo" src="img/bikcraft.png" alt="Bikcraft">
     </a>
 
-    <nav class="header_menu grid-12">
-      <ul>
-        <li {% if currentPage == 'sobre' %}class="menu-ativo"{% endif %}>
-          <a href="sobre.html">Sobre</a>
+    <nav class="header__nav l-grid-12">
+      <ul class="header__menu">
+        <li class="header__menu-item">
+          <a
+            class="header__menu-link{% if currentPage == 'sobre' %} header__menu-link--active{% endif %}"
+            href="sobre.html"
+          >Sobre</a>
         </li>
-        <li {% if currentPage == 'produtos' %}class="menu-ativo"{% endif %}>
-          <a href="produtos.html">Produtos</a>
+        <li class="header__menu-item">
+          <a
+            class="header__menu-link{% if currentPage == 'produtos' %} header__menu-link--active{% endif %}"
+            href="produtos.html"
+          >Produtos</a>
         </li>
-        <li {% if currentPage == 'portfolio' %}class="menu-ativo"{% endif %}>
-          <a href="portfolio.html">Portfólio</a>
+        <li class="header__menu-item">
+          <a
+            class="header__menu-link{% if currentPage == 'portfolio' %} header__menu-link--active{% endif %}"
+            href="portfolio.html"
+          >Portfólio</a>
         </li>
-        <li {% if currentPage == 'contato' %}class="menu-ativo"{% endif %}>
-          <a href="contato.html">Contato</a>
+        <li class="header__menu-item">
+          <a
+            class="header__menu-link{% if currentPage == 'contato' %} header__menu-link--active{% endif %}"
+            href="contato.html"
+          >Contato</a>
         </li>
       </ul>
     </nav>
