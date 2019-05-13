@@ -1,0 +1,57 @@
+.social-networks {
+  list-style: none;
+  padding: 0;
+}
+
+.social-networks__item {
+  display: inline-block;
+  margin-right: 5px;
+
+  @include break("large") {
+    margin-right: 10px;
+  }
+}
+
+.social-networks__link {
+  border: 3px solid $primary;
+  display: block;
+  width: 50px;
+  height: 50px;
+  transition: all .5s ease;
+
+  &:hover {
+    border-color: $white;
+  }
+
+  img {
+    transition: all .5s ease;
+  }
+
+  &:hover img {
+    filter: grayscale(100%) brightness(1.25);
+  }
+}
+
+//   a {
+//     border: 3px solid $cor-primaria;
+//     display: block;
+//     width: 50px;
+//     height: 50px;
+//     transition: all .5s ease;
+//     @include d(t) {
+//       width: 40px;
+//       height: 40px;
+//     }
+
+//     &:hover {
+//       border-color: $white;
+//     }
+
+//     &:hover img {
+
+//     }
+//   }
+
+//   a img {
+//     transition: all .5s ease;
+//   }

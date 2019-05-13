@@ -1,0 +1,45 @@
+.footer {
+  @include type-2(14);
+  width: 100%;
+  background: $black;
+  color: $white;
+  padding: 20px 0;
+}
+
+
+.footer__title {
+  @include type-1(18);
+  color: $primary;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: bold;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: $primary;
+    margin: 6px 0 12px 0;
+  }
+}
+
+.footer__content {
+  padding-right: 40px;
+}
+
+.footer__content--list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-copy {
+  @include type-2(14);
+  background: $primary;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.footer-copy__content {
+  margin-bottom: 0;
+}
