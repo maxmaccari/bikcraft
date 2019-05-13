@@ -8,24 +8,6 @@ p {
   @include tipo-2(14);
 }
 
-.subtitulo {
-  color: $black;
-  font-weight: bold;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 40px;
-  @include tipo-1(24);
-
-  &:after {
-    background: $black;
-    content: "";
-    display: block;
-    margin: 8px auto;
-    width: 60px;
-    height: 3px;
-  }
-}
 
 
 /* Introdução Interna */
@@ -57,60 +39,6 @@ p {
       width: 60px;
       height: 3px;
     }
-  }
-}
-
-/* Produtos */
-
-.produtos {
-  padding: 60px 0;
-
-  li {
-    background: $cor-primaria;
-    text-align: center;
-  }
-
-  li h3 {
-    font-weight: bold;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    margin-top: 20px;
-    @include tipo-1(18);
-
-    &:after {
-      background: $black;
-      content: "";
-      display: block;
-      width: 60px;
-      height: 3px;
-      margin: 2px auto;
-    }
-  }
-
-  li p {
-    padding: 10px 20px 20px 20px;
-  }
-}
-
-.produtos-icone {
-  background: $black;
-  padding: 20px;
-
-  img {
-    margin: 0 auto;
-  }
-}
-
-.call {
-  clear: both;
-  text-align: center;
-  padding-top: 40px;
-  @include d(m) {
-    padding-top: 10px;
-  }
-
-  p {
-    margin-bottom: 20px;
   }
 }
 

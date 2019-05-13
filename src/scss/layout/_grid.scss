@@ -26,10 +26,7 @@
 .l-grid-1-3 {
   @extend %grid-structure;
   @include break('medium') {
-    width: ($break-medium / 3) - $gutter + px;
-  }
-  @include break('large') {
-    width: ($break-large / 3) - $gutter + px;
+    width:  calc(33.33% - 20px);
   }
 }
 

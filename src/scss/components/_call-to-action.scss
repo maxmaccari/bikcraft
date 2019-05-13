@@ -1,0 +1,14 @@
+.call-to-action {
+  clear: both;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 20px;
+
+  @include break('medium') {
+    padding-top: 40px;
+  }
+}
+
+.call-to-action__description {
+  margin: 0 0 20px 0;
+}

@@ -1,0 +1,41 @@
+.products-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.products-list__item {
+  text-align: center;
+  background: $primary;
+}
+
+.products-list__icon {
+  background: $black;
+  padding: 20px;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.products-list__title {
+  @include type-1(18);
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-top: 20px;
+
+  &:after {
+    background: $black;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 2px auto;
+  }
+}
+
+.products-list__description {
+  @include type-2(14);
+  padding: 10px 20px 20px 20px;
+  text-align: center;
+}
