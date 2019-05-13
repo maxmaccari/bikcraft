@@ -1,0 +1,69 @@
+$cols: 16;
+$gutter: 20px;
+
+// The layout is Mobile for default
+$break-small: 300px; // For phones and small tablets
+$break-medium: 768px; // For tablets and small resolution screens on computers
+$break-large: 960px; // For most of computers screens
+
+// Breakpoints
+@mixin break($size) {
+  @if $size == 'medium' {
+    @media screen and (min-width: #{$break-medium}) {
+      @content;
+    }
+  } @else if $size == 'large' {
+    @media screen and (min-width: #{$break-large}) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: #{$size}) {
+      @content;
+    }
+  }
+}
+
+@function grid-size($col, $offset: false) {
+  $width: $col / $cols * 100 + '%';
+  $result: calc(#{$width} - #{$gutter});
+  @if $offset == offset {
+    $gutter: $gutter / 2;
+    $result: calc(#{$width} + #{$gutter});
+  }
+  @return $result;
+}
+
+@mixin clearfix {
+  &::after,
+  &::before {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+@mixin container {
+  @include clearfix;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  max-width: $break-small;
+
+  @include break('medium') {
+    max-width: $break-medium;
+  }
+
+  @include break('large') {
+    max-width: $break-large;
+  }
+}
+
+@mixin row {
+  @include clearfix;
+  position: relative;
+
+  @include break('medium') {
+    margin-left: -$gutter / 2;
+    margin-right: -$gutter / 2;
+  }
+}

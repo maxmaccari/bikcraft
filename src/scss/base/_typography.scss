@@ -1,0 +1,50 @@
+// Vars
+$type-1: Arial, Helvetica, sans-serif;
+$type-2: Georgia, 'Times New Roman', Times, serif;
+
+// Mixins
+@mixin type-1($tamanho) {
+  font-family: $type-1;
+
+  @if $tamanho == 14 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @else if $tamanho == 18 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  @else if $tamanho == 24 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  @else if $tamanho == 36 {
+    font-size: 36px;
+  }
+  @else if $tamanho == 48 {
+    font-size: 48px;
+  }
+};
+
+@mixin type-2($tamanho) {
+  font-family: $type-2;
+
+  @if $tamanho == 14 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  @else if $tamanho == 18 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  @else if $tamanho == 24 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  @else if $tamanho == 36 {
+    font-size: 36px;
+  }
+  @else if $tamanho == 48 {
+    font-size: 48px;
+  }
+};
