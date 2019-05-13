@@ -1,0 +1,24 @@
+.main-intro {
+  background: url('../img/bg-mobile.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 40px;
+  text-align: center;
+  width: 100%;
+  height: 380px;
+
+  @include break('medium') {
+    background-image: url("../img/bg.jpg");
+    margin-top: 92px;
+  }
+}
+
+.main-intro__title {
+  @include type-1(36);
+  color: $white;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  @include break('medium') {
+    @include type-1(48);
+  }
+}

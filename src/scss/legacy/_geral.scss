@@ -8,11 +8,6 @@ p {
   @include tipo-2(14);
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 .subtitulo {
   color: $black;
   font-weight: bold;
@@ -32,54 +27,6 @@ img {
   }
 }
 
-.btn {
-  border: solid 3px $cor-primaria;
-  color: $cor-primaria;
-  font-weight: bold;
-  letter-spacing: .1em;
-  padding: 10px 30px;
-  text-transform: uppercase;
-  transition: all .5s ease;
-  @include tipo-1(14);
-
-  &:hover {
-    border-color: $white;
-    color: $white;
-  }
-
-  &.btn-preto:hover {
-    border-color: $black;
-    color: $black;
-  }
-}
-
-/* Introdução */
-
-.introducao {
-  background: url("../img/bg.jpg") no-repeat center;
-  background-size: cover;
-  margin-top: 92px;
-  padding-top: 80px;
-  text-align: center;
-  width: 100%;
-  height: 380px;
-
-  @include d(m) {
-    background-image: url('../img/bg-mobile.jpg');
-    margin-top: 0;
-    padding-top: 40px;
-  }
-
-  h1 {
-    color: $white;
-    font-weight: bold;
-    text-transform: uppercase;
-    @include tipo-1(48);
-    @include d(m) {
-      @include tipo-1(36);
-    }
-  }
-}
 
 /* Introdução Interna */
 
