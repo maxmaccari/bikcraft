@@ -68,7 +68,7 @@ const server = () => {
 };
 
 const watch = () => {
-  gulp.watch('src/scss/*.scss', buildStyles);
+  gulp.watch('src/scss/**/*.scss', buildStyles);
   gulp.watch('src/js/**/*.js', buildJavascript);
   gulp.watch(['src/pages/**/*.html', 'src/templates/**/*'], buildPages);
   gulp.watch('src/static/**/*', copyStatic);
