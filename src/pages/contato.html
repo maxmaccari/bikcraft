@@ -6,14 +6,19 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<section class="introducao-interna interna-contato">
+<section class="internal-intro internal-intro--portfolio">
   <div class="container">
-    <h1>Contato</h1>
-    <p>tire suas dúvidas com a gente</p>
+    <h1 class="internal-intro__title animate js-animate--first">
+      Contato
+    </h1>
+    <p class="internal-intro__description animate js-animate--second">
+      tire suas dúvidas com a gente
+    </p>
   </div>
 </section>
 
-<section class="container contato animar-interno">
+
+<section class="container contato animate js-animate--third">
   <form action="#" method="post" name="form" class="formphp grid-8 contato_form">
     <label for="nome">Nome</label>
     <input id="nome" name="nome" type="text">
