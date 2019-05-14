@@ -1,0 +1,9 @@
+.section-textblock {
+  @include type-2(14);
+
+  @include break('medium') {
+    @include type-2(18);
+    padding-right: 40px;
+    padding-bottom: 1em;
+  }
+}

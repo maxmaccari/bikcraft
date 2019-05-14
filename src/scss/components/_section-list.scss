@@ -1,0 +1,16 @@
+.section-list {
+  @include type-2(14);
+  list-style: none;
+  padding-left: 0;
+
+  @include break('medium') {
+    @include type-2(18)
+  }
+}
+
+.section-list__item {
+  &:before {
+    content: "- "
+  }
+}
+

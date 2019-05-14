@@ -32,6 +32,8 @@
 @import "components/buttons";
 @import "components/main-intro";
 @import "components/section-title";
+@import "components/section-textblock";
+@import "components/section-list";
 @import "components/products-list";
 @import "components/call-to-action";
 @import "components/portfolio";
@@ -52,10 +54,8 @@
 @import "legacy/normalize";
 @import "legacy/reset";
 @import "legacy/grid";
-@import "legacy/geral";
 
 // Páginas
-@import "legacy/sobre";
 @import "legacy/produtos";
 @import "legacy/portfolio";
 @import "legacy/contato";

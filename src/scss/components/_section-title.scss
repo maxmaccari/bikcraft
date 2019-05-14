@@ -21,3 +21,11 @@
 .section-title--primary {
   color: $primary;
 }
+
+.section-title--align-left {
+  text-align: left;
+
+  &:after {
+    margin-left: 0;
+  }
+}

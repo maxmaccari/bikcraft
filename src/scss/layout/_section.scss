@@ -1,3 +1,13 @@
 .section {
   margin: 20px auto;
 }
+
+.section--row {
+  @include break('medium') {
+    margin: 20px 10px;
+  }
+}
+
+.section--end {
+  margin-bottom: 40px;
+}
