@@ -8,6 +8,7 @@
 // Vendors
 //-------------
 @import "vendors/normalize";
+@import "vendors/formphp";
 
 //-------------
 // Base
@@ -36,6 +37,11 @@
 @import "components/portfolio";
 @import "components/quality";
 @import "components/internal-intro";
+
+//-------------
+// Utils
+//-------------
+@import "utils/animate";
 
 //-------------
 // Legacy Files

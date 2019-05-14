@@ -1,0 +1,20 @@
+$success: #31aa39;
+$error: #f64540;
+
+.formphp label.nao-aparece, .formphp input.nao-aparece {
+	display: none !important;
+}
+
+#form-erro span, #form-send span  {
+	margin-bottom: 10px;
+  display: block;
+  @include type-1(18);
+}
+
+#form-send {
+	color: $success;
+}
+
+#form-erro {
+	color: $error;
+}
