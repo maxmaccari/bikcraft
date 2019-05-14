@@ -8,8 +8,6 @@ p {
   @include tipo-2(14);
 }
 
-
-
 /* Introdução Interna */
 
 .introducao-interna {
@@ -39,64 +37,6 @@ p {
       width: 60px;
       height: 3px;
     }
-  }
-}
-
-/* Qualidade */
-
-.qualidade {
-  padding: 60px 0;
-
-  &:after {
-    content: "";
-    width: 663px;
-    height: 109px;
-    display: block;
-    background: url("../img/linhas.png");
-    position: absolute;
-    top: 202px;
-    left: 149px;
-    z-index: -10;
-    @include d(t) {
-      left: 53px;
-    }
-    @include d(m) {
-      display: none;
-    }
-  }
-
-  img {
-    margin: 0 auto;
-  }
-}
-
-.qualidade-lista {
-  overflow: hidden;
-  padding-top: 30px;
-
-  li {
-    text-align: center;
-    padding: 0 20px;
-    @include d(t) {
-      padding: 0 10px;
-    }
-  }
-
-  li h3 {
-    font-weight: bold;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    margin-top: 20px;
-    @include tipo-1(18);
-  }
-
-  li h3:after {
-    background: $black;
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    margin: 6px auto;
   }
 }
 
