@@ -1,15 +1,23 @@
 //-------------
+// Abstract
+//-------------
+@import "abstract/colors";
+@import "abstract/typography";
+
+//-------------
+// Vendors
+//-------------
+@import "vendors/normalize";
+
+//-------------
 // Base
 //-------------
-@import "base/colors";
-@import "base/typography";
-@import "base/normalize";
 @import "base/elements";
 
 //-------------
 // Layout
 //-------------
-@import "layout/utils";
+@import "layout/grid-utils";
 @import "layout/grid";
 @import "layout/section";
 
@@ -27,6 +35,7 @@
 @import "components/call-to-action";
 @import "components/portfolio";
 @import "components/quality";
+@import "components/internal-intro";
 
 //-------------
 // Legacy Files
