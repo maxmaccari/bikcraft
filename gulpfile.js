@@ -26,7 +26,7 @@ const lintStyles = () => {
   return gulp.src('src/scss/**/*.scss')
     .pipe(sassLint())
     .pipe(sassLint.format())
-    .pipe(sassLint.failOnError())
+    .pipe(sassLint.failOnError());
 };
 
 const buildJavascript = () => {
@@ -57,7 +57,7 @@ const buildPages = () => {
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('public/'))
     .pipe(browserSync.stream());
-}
+};
 
 const minifyImages = () => {
   return gulp.src('src/img/**/*')
@@ -67,7 +67,7 @@ const minifyImages = () => {
     ]))
     .pipe(gulp.dest('public/img'))
     .pipe(browserSync.stream());
-}
+};
 
 const copyStatic = () => {
   return gulp.src('src/static/**/*')
@@ -100,7 +100,7 @@ gulp.task('images', minifyImages);
 gulp.task('static', copyStatic);
 gulp.task('lint', gulp.series('lintJavascript', 'lintStyles'));
 gulp.task('build',
-  gulp.series('lint', 'static', 'images', 'styles', 'javascript', 'pages'))
+  gulp.series('lint', 'static', 'images', 'styles', 'javascript', 'pages'));
 gulp.task('server', server);
 gulp.task('watch', watch);
 gulp.task('default', gulp.parallel('build','watch', 'server'));
