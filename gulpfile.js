@@ -23,7 +23,7 @@ const buildStyles = () => {
 const buildJavascript = () => {
   const files = [
     'node_modules/jquery/dist/jquery.js',
-    'src/js/plugins.js',
+    'src/js/vendor/*.js',
     'src/js/main.js'
   ]
   return gulp.src(files)
