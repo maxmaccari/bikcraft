@@ -32,26 +32,12 @@
   }
 }
 
-//   a {
-//     border: 3px solid $cor-primaria;
-//     display: block;
-//     width: 50px;
-//     height: 50px;
-//     transition: all .5s ease;
-//     @include d(t) {
-//       width: 40px;
-//       height: 40px;
-//     }
+.social-networks__link--black {
+  &:hover {
+    border-color: $black;
+  }
 
-//     &:hover {
-//       border-color: $white;
-//     }
-
-//     &:hover img {
-
-//     }
-//   }
-
-//   a img {
-//     transition: all .5s ease;
-//   }
+  &:hover img {
+    filter: grayscale(100%) brightness(0);
+  }
+}
