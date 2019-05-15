@@ -14,6 +14,7 @@
 // Base
 //-------------
 @import "base/elements";
+@import "base/form";
 
 //-------------
 // Layout
@@ -32,6 +33,7 @@
 @import "components/buttons";
 @import "components/main-intro";
 @import "components/section-title";
+@import "components/section-subtitle";
 @import "components/section-textblock";
 @import "components/section-list";
 @import "components/products-list";
@@ -39,11 +41,18 @@
 @import "components/portfolio";
 @import "components/quality";
 @import "components/internal-intro";
+@import "components/product-sheet";
 
 //-------------
 // Utils
 //-------------
 @import "utils/animate";
+
+//-------------
+// Pages
+//-------------
+@import "pages/products";
+
 
 //-------------
 // Legacy Files
@@ -55,6 +64,5 @@
 @import "legacy/grid";
 
 // Páginas
-@import "legacy/produtos";
 @import "legacy/portfolio";
 @import "legacy/contato";

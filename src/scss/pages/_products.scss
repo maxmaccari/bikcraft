@@ -1,0 +1,44 @@
+.budget-section {
+  background: $black;
+  margin-top: 60px;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.budget-form {
+  @include break('medium') {
+    padding-right: 60px;
+  }
+}
+
+.budget-data {
+  color: $white;
+}
+
+.budget-data__info {
+  @include type-2(18);
+  display: block;
+}
+
+.budget-data__list {
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+
+  @include break('medium') {
+    padding-right: 60px;
+  }
+}
+
+.budget-data__list-item {
+  @include type-2(14);
+  padding: 10px 15px;
+
+  &:nth-child(odd) {
+    background: $gray;
+  }
+
+  &:before {
+    content: "- "
+  }
+}

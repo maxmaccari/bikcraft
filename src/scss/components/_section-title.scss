@@ -20,6 +20,10 @@
 
 .section-title--primary {
   color: $primary;
+
+  &:after {
+    background: $primary;
+  }
 }
 
 .section-title--align-left {

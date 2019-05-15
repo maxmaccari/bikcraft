@@ -1,0 +1,28 @@
+.label {
+  @include type-2(18);
+  color: $white;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.input, .textarea {
+  @include type-2(14);
+  color: $white;
+  background: none;
+  border: 4px solid $primary;
+  display: block;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 7px;
+  width: 100%;
+  transition: all .5s ease;
+
+  &:focus {
+    border-color: $white;
+  }
+}
+
+.textarea {
+  height: 120px;
+  margin-bottom: 20px;
+}

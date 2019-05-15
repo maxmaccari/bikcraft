@@ -8,6 +8,8 @@
   text-transform: uppercase;
   transition: all .5s ease;
   text-decoration: none;
+  background: none;
+  cursor: pointer;
 
   &:hover {
     border-color: $white;
@@ -18,4 +20,8 @@
 .btn--black:hover {
   border-color: $black;
   color: $black;
+}
+
+.btn--larger {
+  padding: 7px 40px;
 }
