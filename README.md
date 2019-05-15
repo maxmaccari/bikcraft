@@ -19,7 +19,7 @@ npm dev server
 ## Courses
 - [x] Web Design Completo
 - [X] CSS com SASS
-- [ ] Automação Front End com NPM
+- [x] Automação Front End com NPM
 
 ## Changes that I'm gonna make during the time
 - [x] Use git on this project
@@ -30,6 +30,6 @@ npm dev server
 - [x] Optimize images on build
 - [x] Use a template engine to avoid code duplication on public pages
 - [ ] Install linter for CSS and Javascript
-- [ ] Use BEM and another CSS Architecture methodologies to organize CSS code
-- [ ] Style the code in the way I like to code
+- [x] Use BEM and another CSS Architecture methodologies to organize CSS code
+- [x] Style the code in the way I like to code
 - [ ] Create an API to receive contact form
