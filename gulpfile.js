@@ -8,6 +8,7 @@ const imagemin = require('gulp-imagemin');
 const nunjucksRender = require('gulp-nunjucks-render');
 const htmlmin = require('gulp-htmlmin');
 const eslint = require('gulp-eslint');
+const sassLint = require('gulp-sass-lint');
 
 // Functions
 const buildStyles = () => {
@@ -19,6 +20,13 @@ const buildStyles = () => {
     }))
     .pipe(gulp.dest('public/css/'))
     .pipe(browserSync.stream());
+};
+
+const lintStyles = () => {
+  return gulp.src('src/scss/**/*.scss')
+    .pipe(sassLint())
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
 };
 
 const buildJavascript = () => {
@@ -84,14 +92,15 @@ const watch = () => {
 
 // Tasks
 gulp.task('styles', buildStyles);
+gulp.task('lintStyles', lintStyles);
 gulp.task('javascript', buildJavascript);
 gulp.task('lintJavascript', lintJavascript);
 gulp.task('pages', buildPages);
 gulp.task('images', minifyImages);
 gulp.task('static', copyStatic);
-gulp.task('lint', gulp.series('lintJavascript'));
+gulp.task('lint', gulp.series('lintJavascript', 'lintStyles'));
 gulp.task('build',
-  gulp.series('static', 'images', 'styles', 'javascript', 'pages'))
+  gulp.series('lint', 'static', 'images', 'styles', 'javascript', 'pages'))
 gulp.task('server', server);
 gulp.task('watch', watch);
 gulp.task('default', gulp.parallel('build','watch', 'server'));

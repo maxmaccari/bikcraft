@@ -1,0 +1,11 @@
+files:
+  ignore:
+    - 'src/scss/vendors/*.scss'
+rules:
+  mixins-before-declarations:
+    - exclude: ['break']
+  class-name-format:
+    - convention: 'hyphenatedbem'
+  no-qualifying-elements:
+    allow-element-with-attribute: true
+  force-attribute-nesting: 0
