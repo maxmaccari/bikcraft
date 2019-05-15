@@ -28,9 +28,11 @@
     "gulp": "^4.0.1",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^5.0.0",
     "gulp-imagemin": "^5.0.3",
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-sass": "^4.0.2",
+    "gulp-sass-lint": "^1.4.0",
     "gulp-uglify": "^3.0.2",
     "jimp": "^0.6.4",
     "sass": "^1.19.0"
@@ -38,5 +40,23 @@
   "dependencies": {
     "gulp-htmlmin": "^5.0.1",
     "jquery": "^3.4.0"
-  }
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "globals": {
+      "document": "readonly",
+      "window": "readonly",
+      "$": "readonly",
+      "Visibility": "readonly"
+    },
+    "rules": {
+      "semi": "error",
+      "quotes": ["error", "single"],
+      "indent": ["error", 2]
+    }
+  },
+  "eslintIgnore": [
+    "gulpfile.js",
+    "src/js/vendor/*.js"
+  ]
 }
