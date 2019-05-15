@@ -1,8 +1,8 @@
 .call-to-action {
   clear: both;
-  text-align: center;
-  padding-top: 10px;
   margin-bottom: 20px;
+  padding-top: 10px;
+  text-align: center;
 
   @include break('medium') {
     padding-top: 40px;

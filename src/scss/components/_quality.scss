@@ -3,14 +3,14 @@
 
   &:after {
     @include break('medium') {
-      content: "";
-      width: 663px;
-      height: 109px;
-      display: block;
       background: url("../img/linhas.png");
+      content: "";
+      display: block;
+      height: 109px;
+      left: 53px;
       position: absolute;
       top: 163px;
-      left: 53px;
+      width: 663px;
       z-index: -10;
     }
 
@@ -25,81 +25,34 @@
 }
 
 .quality__list {
-  overflow: hidden;
-  padding-top: 30px;
   list-style: none;
-  padding: 0;
-  padding-top: 20px;
+  margin: 0;
+  overflow: hidden;
+  padding: 30px 0 0;
 }
 
 .quality__list-item {
-  text-align: center;
   padding: 0 10px;
+  text-align: center;
 }
 
 .quality__item-title {
   @include type-1(18);
   font-weight: bold;
   letter-spacing: .1em;
-  text-transform: uppercase;
   margin-top: 20px;
+  text-transform: uppercase;
 
   &:after {
     background: $color-black;
     content: "";
     display: block;
-    width: 60px;
     height: 3px;
     margin: 6px auto;
+    width: 60px;
   }
 }
 
 .quality__item-description {
   @include type-2(14);
 }
-
-
-//   &:after {
-
-//     @include d(t) {
-//
-//     }
-//     @include d(m) {
-//       display: none;
-//     }
-//   }
-
-//   img {
-//     margin: 0 auto;
-//   }
-// }
-
-// .qualidade-lista {
-//   overflow: hidden;
-//   padding-top: 30px;
-
-//   li {
-//     text-align: center;
-//     padding: 0 20px;
-//     @include d(t) {
-//       padding: 0 10px;
-//     }
-//   }
-
-//   li h3 {
-//     font-weight: bold;
-//     letter-spacing: .1em;
-//     text-transform: uppercase;
-//     margin-top: 20px;
-//     @include tipo-1(18);
-//   }
-
-//   li h3:after {
-//     background: $color-black;
-//     content: "";
-//     display: block;
-//     width: 60px;
-//     height: 3px;
-//     margin: 6px auto;
-//   }
-// }

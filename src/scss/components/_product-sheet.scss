@@ -4,29 +4,29 @@
 
 .product-sheet__title {
   @include type-1(36);
-  top: -105px;
   color: $color-white;
   font-weight: bold;
   letter-spacing: .1em;
+  margin-bottom: -67px;
+  margin-top: 0;
+  position: relative;
   text-align: center;
   text-transform: uppercase;
-  position: relative;
-  margin-top: 0;
-  margin-bottom: -67px;
+  top: -105px;
 
   &:after,
   &:before {
-    content: "";
     background: $color-white;
+    content: "";
     display: block;
+    height: 3px;
     margin: 6px auto 8px auto;
     width: 60px;
-    height: 3px;
   }
 
   @include break('medium') {
-    top: -150px;
     margin-bottom: -55px;
+    top: -150px;
   }
 
   @include break('large') {
@@ -36,8 +36,8 @@
 
 .product-sheet__icon {
   background: $color-black;
-  padding: 41px 0;
   height: 222px;
+  padding: 41px 0;
 
   img {
     margin: 0 auto;
@@ -56,8 +56,8 @@
 .product-sheet__info-description {
   @include type-2(14);
   color: $color-white;
-  padding: 20px 30px;
   margin: 0;
+  padding: 20px 30px;
 
   @include break('medium') {
     height: 122px;
@@ -71,9 +71,9 @@
 }
 
 .product-sheet__info-list {
-  padding-left: 0;
   list-style: none;
   margin: 0;
+  padding-left: 0;
 }
 
 .product-sheet__info-list-item {
@@ -81,12 +81,12 @@
   background: $color-primary;
   float: left;
   font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 16px;
-  width: 149px;
   height: 49px;
   line-height: 20px;
+  padding-top: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 149px;
 
   &:nth-child(1), &:nth-child(2) {
     margin-bottom: 2px;

@@ -1,37 +1,37 @@
 .rslides {
-  position: relative;
   list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
   margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
 
   li {
     -webkit-backface-visibility: hidden;
-    position: absolute;
     display: none;
-    width: 100%;
     left: 0;
+    position: absolute;
     top: 0;
+    width: 100%;
 
     &:first-child {
-      position: relative;
       display: block;
       float: left;
+      position: relative;
     }
   }
 
   img {
+    border: 0;
     display: block;
     height: auto;
     width: 100%;
-    border: 0;
   }
 }
 
 .rslides_tabs {
-  text-align: center;
   margin-top: 14px;
+  text-align: center;
 
   li {
     display: inline;
@@ -39,15 +39,15 @@
   }
 
   li a {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
     background: $color-gray;
-    color: $color-primary;
     border-radius: 12px;
+    color: $color-primary;
+    display: inline-block;
+    height: 12px;
     overflow: hidden;
     text-indent: -200px;
     transition: all .5s ease;
+    width: 12px;
   }
 
   li a:hover, li.rslides_here a {

@@ -4,8 +4,8 @@
 }
 
 .products-list__item {
-  text-align: center;
   background: $color-primary;
+  text-align: center;
 }
 
 .products-list__icon {
@@ -21,16 +21,16 @@
   @include type-1(18);
   font-weight: bold;
   letter-spacing: .1em;
-  text-transform: uppercase;
   margin-top: 20px;
+  text-transform: uppercase;
 
   &:after {
     background: $color-black;
     content: "";
     display: block;
-    width: 60px;
     height: 3px;
     margin: 2px auto;
+    width: 60px;
   }
 }
 

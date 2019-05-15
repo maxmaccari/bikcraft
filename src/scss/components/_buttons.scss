@@ -1,15 +1,15 @@
 .btn {
   @include type-1(14);
+  background: none;
   border: solid 3px $color-primary;
   color: $color-primary;
+  cursor: pointer;
   font-weight: bold;
   letter-spacing: .1em;
   padding: 10px 30px;
+  text-decoration: none;
   text-transform: uppercase;
   transition: all .5s ease;
-  text-decoration: none;
-  background: none;
-  cursor: pointer;
 
   &:hover {
     border-color: $color-white;

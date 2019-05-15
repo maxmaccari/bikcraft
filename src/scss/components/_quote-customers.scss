@@ -1,20 +1,20 @@
 .quote-customers {
-  padding: 60px 0;
-  max-width: 460px;
   margin: 0 auto;
+  max-width: 460px;
+  padding: 60px 0;
 }
 
 .quote-customers__content {
   @include type-2(18);
-  text-align: center;
   font-style: italic;
-  margin-top: 0;
   margin-bottom: 20px;
+  margin-top: 0;
+  text-align: center;
 }
 
 .quote-customers__author {
   @include type-1(18);
   float: right;
-  font-weight: bold;
   font-style: normal;
+  font-weight: bold;
 }

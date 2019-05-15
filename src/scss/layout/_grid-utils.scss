@@ -45,9 +45,9 @@ $break-large: 960px; // For most of computers screens
 @mixin container {
   @include clearfix;
   margin: 0 auto;
+  max-width: $break-small;
   padding: 0;
   position: relative;
-  max-width: $break-small;
 
   @include break('medium') {
     max-width: $break-medium;
