@@ -1,11 +1,11 @@
 $(function() {
-  $(".rslides").responsiveSlides({
+  $(".js-slides-customers").responsiveSlides({
     auto: true,             // Boolean: Animate automatically, true or false
     speed: 500,            // Integer: Speed of the transition, in milliseconds
     timeout: 5000,          // Integer: Time between slide transitions, in milliseconds
   });
 
-  $(".rslides_portfolio").responsiveSlides({
+  $(".js-slides-portfolio").responsiveSlides({
     auto: true,             // Boolean: Animate automatically, true or false
     speed: 500,            // Integer: Speed of the transition, in milliseconds
     timeout: 4000,          // Integer: Time between slide transitions, in milliseconds

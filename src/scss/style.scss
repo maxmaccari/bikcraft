@@ -30,6 +30,7 @@
 @import "components/footer";
 @import "components/social-networks";
 @import "components/quote";
+@import "components/quote-customers";
 @import "components/buttons";
 @import "components/main-intro";
 @import "components/section-title";
@@ -47,11 +48,13 @@
 // Utils
 //-------------
 @import "utils/animate";
+@import "utils/slides";
 
 //-------------
 // Pages
 //-------------
 @import "pages/products";
+@import "pages/portfolio";
 
 
 //-------------
@@ -64,5 +67,4 @@
 @import "legacy/grid";
 
 // Páginas
-@import "legacy/portfolio";
 @import "legacy/contato";
