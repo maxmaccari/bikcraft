@@ -29,7 +29,7 @@ npm dev server
 - [x] Separate source code from build files
 - [x] Optimize images on build
 - [x] Use a template engine to avoid code duplication on public pages
-- [ ] Install linter for CSS and Javascript
+- [x] Install linter for CSS and Javascript
 - [x] Use BEM and another CSS Architecture methodologies to organize CSS code
 - [x] Style the code in the way I like to code
 - [ ] Create an API to receive contact form
