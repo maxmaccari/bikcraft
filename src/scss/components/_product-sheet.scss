@@ -5,7 +5,7 @@
 .product-sheet__title {
   @include type-1(36);
   top: -105px;
-  color: $white;
+  color: $color-white;
   font-weight: bold;
   letter-spacing: .1em;
   text-align: center;
@@ -17,7 +17,7 @@
   &:after,
   &:before {
     content: "";
-    background: $white;
+    background: $color-white;
     display: block;
     margin: 6px auto 8px auto;
     width: 60px;
@@ -35,7 +35,7 @@
 }
 
 .product-sheet__icon {
-  background: $black;
+  background: $color-black;
   padding: 41px 0;
   height: 222px;
 
@@ -50,12 +50,12 @@
 }
 
 .product-sheet__info-box {
-  background: $black;
+  background: $color-black;
 }
 
 .product-sheet__info-description {
   @include type-2(14);
-  color: $white;
+  color: $color-white;
   padding: 20px 30px;
   margin: 0;
 
@@ -78,7 +78,7 @@
 
 .product-sheet__info-list-item {
   @include type-1(14);
-  background: $primary;
+  background: $color-primary;
   float: left;
   font-weight: bold;
   text-align: center;

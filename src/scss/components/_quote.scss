@@ -1,5 +1,5 @@
 .quote {
-  color: $white;
+  color: $color-white;
   max-width: 400px;
   margin: 0 auto 40px auto;
   text-align: center;
@@ -16,7 +16,7 @@
     display: block;
     width: 60px;
     height: 3px;
-    background: $white;
+    background: $color-white;
     margin: 14px auto 10px auto;
   }
 }

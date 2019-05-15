@@ -5,11 +5,11 @@
 
 .products-list__item {
   text-align: center;
-  background: $primary;
+  background: $color-primary;
 }
 
 .products-list__icon {
-  background: $black;
+  background: $color-black;
   padding: 20px;
 
   img {
@@ -25,7 +25,7 @@
   margin-top: 20px;
 
   &:after {
-    background: $black;
+    background: $color-black;
     content: "";
     display: block;
     width: 60px;

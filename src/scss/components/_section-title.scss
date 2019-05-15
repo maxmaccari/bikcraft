@@ -1,6 +1,6 @@
 .section-title {
   @include type-1(24);
-  color: $black;
+  color: $color-black;
   font-weight: bold;
   letter-spacing: .1em;
   text-transform: uppercase;
@@ -9,7 +9,7 @@
   margin-top: 20px;
 
   &:after {
-    background: $black;
+    background: $color-black;
     content: "";
     display: block;
     margin: 8px auto;
@@ -19,10 +19,10 @@
 }
 
 .section-title--primary {
-  color: $primary;
+  color: $color-primary;
 
   &:after {
-    background: $primary;
+    background: $color-primary;
   }
 }
 

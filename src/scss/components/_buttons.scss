@@ -1,7 +1,7 @@
 .btn {
   @include type-1(14);
-  border: solid 3px $primary;
-  color: $primary;
+  border: solid 3px $color-primary;
+  color: $color-primary;
   font-weight: bold;
   letter-spacing: .1em;
   padding: 10px 30px;
@@ -12,14 +12,14 @@
   cursor: pointer;
 
   &:hover {
-    border-color: $white;
-    color: $white;
+    border-color: $color-white;
+    color: $color-white;
   }
 }
 
 .btn--black:hover {
-  border-color: $black;
-  color: $black;
+  border-color: $color-black;
+  color: $color-black;
 }
 
 .btn--larger {

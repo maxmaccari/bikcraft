@@ -1,5 +1,5 @@
 .budget-section {
-  background: $black;
+  background: $color-black;
   margin-top: 60px;
   padding: 40px 0;
   width: 100%;
@@ -12,7 +12,7 @@
 }
 
 .budget-data {
-  color: $white;
+  color: $color-white;
 }
 
 .budget-data__info {
@@ -35,7 +35,7 @@
   padding: 10px 15px;
 
   &:nth-child(odd) {
-    background: $gray;
+    background: $color-gray;
   }
 
   &:before {

@@ -3,7 +3,7 @@
   top: 0;
   width: 100%;
   z-index: 10;
-  background: $primary;
+  background: $color-primary;
 
   @include break("medium") {
     position: fixed;
@@ -50,13 +50,13 @@
 
 .header__menu-link {
   @include type-1(14);
-  border: 4px solid $black;
+  border: 4px solid $color-black;
   display: block;
   float: left;
   padding: 10px 0;
   width: 136px;
 
-  color: $black;
+  color: $color-black;
   font-weight: bold;
   letter-spacing: .1em;
   text-transform: uppercase;
@@ -65,8 +65,8 @@
   transition: all .5s ease;
 
   &:hover {
-    border-color: $white;
-    color: $white;
+    border-color: $color-white;
+    color: $color-white;
   }
 
   @include break('medium') {
@@ -76,6 +76,6 @@
 }
 
 .header__menu-link--active {
-  border-color: $white;
-  color: $white;
+  border-color: $color-white;
+  color: $color-white;
 }
